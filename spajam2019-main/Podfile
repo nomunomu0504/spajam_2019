@@ -1,0 +1,21 @@
+# Uncomment the next line to define a global platform for your project
+# platform :ios, '9.0'
+
+target 'spajam2019-main' do
+  # Comment the next line if you don't want to use dynamic frameworks
+  use_frameworks!
+
+  # Pods for spajam2019-main
+  pod 'VegaScrollFlowLayout'
+
+  target 'spajam2019-mainTests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+  target 'spajam2019-mainUITests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+end

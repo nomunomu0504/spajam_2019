@@ -1,0 +1,16 @@
+PODS:
+  - VegaScrollFlowLayout (1.1)
+
+DEPENDENCIES:
+  - VegaScrollFlowLayout
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - VegaScrollFlowLayout
+
+SPEC CHECKSUMS:
+  VegaScrollFlowLayout: 9158061f29179147755f937c2b21693fc5dbbac3
+
+PODFILE CHECKSUM: cebcf73a317d3fd518f3aa3547315245bff7f93f
+
+COCOAPODS: 1.7.2
