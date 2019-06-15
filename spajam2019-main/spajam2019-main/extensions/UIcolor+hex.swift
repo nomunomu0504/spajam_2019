@@ -38,4 +38,8 @@ extension UIColor {
     class func border() -> UIColor {
         return UIColor(hex: "e0e0e0")
     }
+    
+    class func white() -> UIColor {
+        return UIColor(hex: "FFFFFF")
+    }
 }
