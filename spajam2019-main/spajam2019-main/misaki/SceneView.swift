@@ -9,6 +9,7 @@ import UIKit
 
 protocol SceneViewDelegate: class {
     func sceneViewButtonDidTapped(sender: UIButton)
+    func sceneLabelTapped(sender: UITapGestureRecognizer)
 }
 
 
@@ -19,8 +20,10 @@ class SceneView: UIView {
     
     @IBAction func labelTapped(_ sender: UITapGestureRecognizer) {
         let _instance = buttonSelector(frame: CGRect(x: 0, y: 290, width: 375, height: 295))
+        delegate?.sceneLabelTapped(sender: sender)
         _instance.buttonsTitles = buttonsTitles
         _view = _instance.selectorView()
+
         
         self.addSubview(_view)
     }

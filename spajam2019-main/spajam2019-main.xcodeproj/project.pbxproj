@@ -24,7 +24,6 @@
 		6972A5B822B4C56D003C9660 /* maturi.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6972A5B722B4C56D003C9660 /* maturi.jpg */; };
 		6972A5BA22B4C5ED003C9660 /* hanabi.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6972A5B922B4C5ED003C9660 /* hanabi.jpg */; };
 		69F53AAF22B3EE5000956858 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69F53AAE22B3EE5000956858 /* AppDelegate.swift */; };
-		69F53AB122B3EE5000956858 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69F53AB022B3EE5000956858 /* ViewController.swift */; };
 		69F53AB422B3EE5000956858 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 69F53AB222B3EE5000956858 /* Main.storyboard */; };
 		69F53AB722B3EE5000956858 /* spajam2019_main.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 69F53AB522B3EE5000956858 /* spajam2019_main.xcdatamodeld */; };
 		69F53AB922B3EE5200956858 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 69F53AB822B3EE5200956858 /* Assets.xcassets */; };
@@ -84,7 +83,6 @@
 		6972A5B922B4C5ED003C9660 /* hanabi.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = hanabi.jpg; sourceTree = "<group>"; };
 		69F53AAB22B3EE5000956858 /* spajam2019-main.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "spajam2019-main.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		69F53AAE22B3EE5000956858 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		69F53AB022B3EE5000956858 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		69F53AB322B3EE5000956858 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		69F53AB622B3EE5000956858 /* spajam2019_main.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = spajam2019_main.xcdatamodel; sourceTree = "<group>"; };
 		69F53AB822B3EE5200956858 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -220,7 +218,6 @@
 				99D0483322B4ADBF00DC63BE /* resources */,
 				692D7D1B22B467C5009363BA /* extensions */,
 				69F53AAE22B3EE5000956858 /* AppDelegate.swift */,
-				69F53AB022B3EE5000956858 /* ViewController.swift */,
 				69F53AB222B3EE5000956858 /* Main.storyboard */,
 				69F53AB822B3EE5200956858 /* Assets.xcassets */,
 				69F53ABA22B3EE5200956858 /* LaunchScreen.storyboard */,
@@ -536,7 +533,6 @@
 				997A2BD322B517CB005C44A7 /* InstagramAPI.swift in Sources */,
 				99D0483522B4B0FC00DC63BE /* JSONModel.swift in Sources */,
 				99D0483F22B4C49800DC63BE /* UIView+NibInstantiatable.swift in Sources */,
-				69F53AB122B3EE5000956858 /* ViewController.swift in Sources */,
 				692D7D1D22B467D9009363BA /* UIcolor+hex.swift in Sources */,
 				997A2BD622B524EA005C44A7 /* PreConfessionViewController.swift in Sources */,
 				99D0483722B4BDB900DC63BE /* AITalkWebAPI.swift in Sources */,
