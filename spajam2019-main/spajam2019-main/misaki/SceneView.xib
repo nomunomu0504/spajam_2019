@@ -6,58 +6,64 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SceneView" customModule="spajam2019_main" customModuleProvider="target">
             <connections>
-                <outlet property="backImageView" destination="JxQ-la-y0V" id="Tlo-Ht-xem"/>
-                <outlet property="button1" destination="G8W-El-On0" id="CeI-zX-8wH"/>
-                <outlet property="button2" destination="v1k-95-atP" id="Ic8-wt-rJ4"/>
-                <outlet property="button3" destination="zar-Yl-MZn" id="Zhu-Ko-lKo"/>
-                <outlet property="imageView" destination="Twx-4G-4Gt" id="yZz-13-4pn"/>
-                <outlet property="label" destination="weD-iC-AWD" id="kaB-fS-O4P"/>
+                <outlet property="backImageView" destination="FAV-75-ZWE" id="LYj-Bb-3hd"/>
+                <outlet property="imageView" destination="ocw-v8-o27" id="3af-s9-SPv"/>
+                <outlet property="label" destination="nzR-Nj-ltx" id="UFG-9r-t1f"/>
             </connections>
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <view contentMode="scaleToFill" id="iN0-l3-epB">
-            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+        <view contentMode="scaleToFill" id="QuP-Nk-0he">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="JxQ-la-y0V">
-                    <rect key="frame" x="0.0" y="0.0" width="414" height="905"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="FAV-75-ZWE">
+                    <rect key="frame" x="0.0" y="44" width="375" height="734"/>
                 </imageView>
-                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Twx-4G-4Gt">
-                    <rect key="frame" x="11" y="349" width="392" height="547"/>
-                    <autoresizingMask key="autoresizingMask"/>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ocw-v8-o27">
+                    <rect key="frame" x="10" y="257" width="355" height="521"/>
                 </imageView>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="こんにちわー世界" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="weD-iC-AWD">
-                    <rect key="frame" x="56" y="76" width="302" height="36"/>
-                    <autoresizingMask key="autoresizingMask"/>
+                <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="こんにちわー世界" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nzR-Nj-ltx">
+                    <rect key="frame" x="0.0" y="44" width="375" height="145"/>
+                    <gestureRecognizers/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="145" id="zsm-wA-J9A"/>
+                    </constraints>
                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
+                    <connections>
+                        <outletCollection property="gestureRecognizers" destination="jeF-uK-Fac" appends="YES" id="yfD-ns-sdU"/>
+                    </connections>
                 </label>
-                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="G8W-El-On0">
-                    <rect key="frame" x="56" y="161" width="302" height="36"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <state key="normal" title="はい"/>
-                </button>
-                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="v1k-95-atP">
-                    <rect key="frame" x="56" y="231" width="302" height="36"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <state key="normal" title="いいえ"/>
-                </button>
-                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zar-Yl-MZn">
-                    <rect key="frame" x="56" y="291" width="302" height="36"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <state key="normal" title="どっちでも"/>
-                </button>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
-            <point key="canvasLocation" x="46.399999999999999" y="35.467980295566505"/>
+            <constraints>
+                <constraint firstItem="nzR-Nj-ltx" firstAttribute="leading" secondItem="FAV-75-ZWE" secondAttribute="leading" id="0dx-Y9-w49"/>
+                <constraint firstItem="ocw-v8-o27" firstAttribute="leading" secondItem="ksF-ca-p5e" secondAttribute="leading" constant="10" id="Dsv-DZ-plw"/>
+                <constraint firstItem="nzR-Nj-ltx" firstAttribute="trailing" secondItem="FAV-75-ZWE" secondAttribute="trailing" id="Hwt-28-9Y4"/>
+                <constraint firstItem="FAV-75-ZWE" firstAttribute="leading" secondItem="QuP-Nk-0he" secondAttribute="leading" id="NOi-Bi-Wi1"/>
+                <constraint firstItem="FAV-75-ZWE" firstAttribute="top" secondItem="ksF-ca-p5e" secondAttribute="top" id="QeY-we-R1H"/>
+                <constraint firstItem="ocw-v8-o27" firstAttribute="centerX" secondItem="QuP-Nk-0he" secondAttribute="centerX" id="aVf-NN-Pqd"/>
+                <constraint firstItem="ocw-v8-o27" firstAttribute="bottom" secondItem="ksF-ca-p5e" secondAttribute="bottom" id="jCi-Cx-qlH"/>
+                <constraint firstAttribute="trailing" secondItem="FAV-75-ZWE" secondAttribute="trailing" id="jwg-dO-Lxx"/>
+                <constraint firstItem="ocw-v8-o27" firstAttribute="top" secondItem="nzR-Nj-ltx" secondAttribute="bottom" constant="68" id="qg1-GV-zNP"/>
+                <constraint firstItem="FAV-75-ZWE" firstAttribute="bottom" secondItem="ksF-ca-p5e" secondAttribute="bottom" id="vJp-1N-zud"/>
+                <constraint firstItem="nzR-Nj-ltx" firstAttribute="top" secondItem="ksF-ca-p5e" secondAttribute="top" id="xsp-zc-ZJy"/>
+                <constraint firstItem="ksF-ca-p5e" firstAttribute="trailing" secondItem="ocw-v8-o27" secondAttribute="trailing" constant="10" id="z5F-Zd-S9j"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ksF-ca-p5e"/>
+            <point key="canvasLocation" x="-414" y="33"/>
         </view>
+        <tapGestureRecognizer id="jeF-uK-Fac">
+            <connections>
+                <action selector="labelTapped:" destination="-1" id="ilH-Gh-WNm"/>
+            </connections>
+        </tapGestureRecognizer>
     </objects>
 </document>

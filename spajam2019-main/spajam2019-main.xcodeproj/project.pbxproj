@@ -32,6 +32,10 @@
 		69F53AC722B3EE5200956858 /* spajam2019_mainTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69F53AC622B3EE5200956858 /* spajam2019_mainTests.swift */; };
 		69F53AD222B3EE5200956858 /* spajam2019_mainUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69F53AD122B3EE5200956858 /* spajam2019_mainUITests.swift */; };
 		997A2BCA22B4DECB005C44A7 /* AITalk.swift in Sources */ = {isa = PBXBuildFile; fileRef = 997A2BC922B4DECB005C44A7 /* AITalk.swift */; };
+		997A2BD322B517CB005C44A7 /* InstagramAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 997A2BD122B517CB005C44A7 /* InstagramAPI.swift */; };
+		997A2BD622B524EA005C44A7 /* PreConfessionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 997A2BD522B524E9005C44A7 /* PreConfessionViewController.swift */; };
+		997A2BD822B5289A005C44A7 /* buttonSelector.xib in Resources */ = {isa = PBXBuildFile; fileRef = 997A2BD722B5289A005C44A7 /* buttonSelector.xib */; };
+		997A2BDA22B52CAB005C44A7 /* buttonSelector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 997A2BD922B52CAB005C44A7 /* buttonSelector.swift */; };
 		99D0483522B4B0FC00DC63BE /* JSONModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99D0483422B4B0FC00DC63BE /* JSONModel.swift */; };
 		99D0483722B4BDB900DC63BE /* AITalkWebAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99D0483622B4BDB900DC63BE /* AITalkWebAPI.swift */; };
 		99D0483F22B4C49800DC63BE /* UIView+NibInstantiatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99D0483E22B4C49800DC63BE /* UIView+NibInstantiatable.swift */; };
@@ -95,6 +99,10 @@
 		7568F3B029704DCC45B865A5 /* Pods_spajam2019_mainTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_spajam2019_mainTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		91DC72A9D1A5B80546D71A65 /* Pods-spajam2019-mainTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-spajam2019-mainTests.release.xcconfig"; path = "Target Support Files/Pods-spajam2019-mainTests/Pods-spajam2019-mainTests.release.xcconfig"; sourceTree = "<group>"; };
 		997A2BC922B4DECB005C44A7 /* AITalk.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AITalk.swift; sourceTree = "<group>"; };
+		997A2BD122B517CB005C44A7 /* InstagramAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InstagramAPI.swift; sourceTree = "<group>"; };
+		997A2BD522B524E9005C44A7 /* PreConfessionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreConfessionViewController.swift; sourceTree = "<group>"; };
+		997A2BD722B5289A005C44A7 /* buttonSelector.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = buttonSelector.xib; sourceTree = "<group>"; };
+		997A2BD922B52CAB005C44A7 /* buttonSelector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = buttonSelector.swift; sourceTree = "<group>"; };
 		99D0483422B4B0FC00DC63BE /* JSONModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONModel.swift; sourceTree = "<group>"; };
 		99D0483622B4BDB900DC63BE /* AITalkWebAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AITalkWebAPI.swift; sourceTree = "<group>"; };
 		99D0483E22B4C49800DC63BE /* UIView+NibInstantiatable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+NibInstantiatable.swift"; sourceTree = "<group>"; };
@@ -220,6 +228,7 @@
 				69F53AB522B3EE5000956858 /* spajam2019_main.xcdatamodeld */,
 				694F17FC22B518390029A3DC /* animal.json */,
 				694F17FE22B51AB80029A3DC /* test.json */,
+				997A2BD522B524E9005C44A7 /* PreConfessionViewController.swift */,
 			);
 			path = "spajam2019-main";
 			sourceTree = "<group>";
@@ -245,6 +254,7 @@
 		99D0483122B4ADBF00DC63BE /* nomunomu */ = {
 			isa = PBXGroup;
 			children = (
+				997A2BD122B517CB005C44A7 /* InstagramAPI.swift */,
 				99D0483622B4BDB900DC63BE /* AITalkWebAPI.swift */,
 				99D0483422B4B0FC00DC63BE /* JSONModel.swift */,
 				99D0483E22B4C49800DC63BE /* UIView+NibInstantiatable.swift */,
@@ -258,6 +268,8 @@
 			children = (
 				6972A5A422B4B7A2003C9660 /* SceneView.swift */,
 				6972A5A722B4B7D5003C9660 /* SceneView.xib */,
+				997A2BD722B5289A005C44A7 /* buttonSelector.xib */,
+				997A2BD922B52CAB005C44A7 /* buttonSelector.swift */,
 			);
 			path = misaki;
 			sourceTree = "<group>";
@@ -401,6 +413,7 @@
 				6972A5B322B4BEA1003C9660 /* 01_koma2.png in Resources */,
 				69F53ABC22B3EE5200956858 /* LaunchScreen.storyboard in Resources */,
 				6972A5B122B4BEA1003C9660 /* 01_koma.png in Resources */,
+				997A2BD822B5289A005C44A7 /* buttonSelector.xib in Resources */,
 				6972A5B222B4BEA1003C9660 /* 01_la.png in Resources */,
 				694F17FD22B518390029A3DC /* animal.json in Resources */,
 				69F53AB922B3EE5200956858 /* Assets.xcassets in Resources */,
@@ -520,11 +533,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				6972A5A522B4B7A2003C9660 /* SceneView.swift in Sources */,
+				997A2BD322B517CB005C44A7 /* InstagramAPI.swift in Sources */,
 				99D0483522B4B0FC00DC63BE /* JSONModel.swift in Sources */,
 				99D0483F22B4C49800DC63BE /* UIView+NibInstantiatable.swift in Sources */,
 				69F53AB122B3EE5000956858 /* ViewController.swift in Sources */,
 				692D7D1D22B467D9009363BA /* UIcolor+hex.swift in Sources */,
+				997A2BD622B524EA005C44A7 /* PreConfessionViewController.swift in Sources */,
 				99D0483722B4BDB900DC63BE /* AITalkWebAPI.swift in Sources */,
+				997A2BDA22B52CAB005C44A7 /* buttonSelector.swift in Sources */,
 				69F53AB722B3EE5000956858 /* spajam2019_main.xcdatamodeld in Sources */,
 				69F53AAF22B3EE5000956858 /* AppDelegate.swift in Sources */,
 				997A2BCA22B4DECB005C44A7 /* AITalk.swift in Sources */,
