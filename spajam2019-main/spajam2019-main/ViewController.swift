@@ -9,11 +9,21 @@
 import UIKit
 
 class ViewController: UIViewController {
+    
+    var sceneView: SceneView!
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        sceneView = SceneView()
+        sceneView.imageView.image = UIImage(named: "01_ang")
+        sceneView.backImageView.image = UIImage(named: "maturi")
+
+        view.addSubview(sceneView)
         
-        // Do any additional setup after loading the view.
+    }
+
+    override func viewDidLayoutSubviews() {
+        super.viewDidLayoutSubviews()
     }
 
 

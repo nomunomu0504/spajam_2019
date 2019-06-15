@@ -26,4 +26,16 @@ extension UIColor {
     convenience init(hex: String) {
         self.init(hex: hex, alpha: 1.0)
     }
+    
+    class func title() -> UIColor {
+        return UIColor(hex: "424242")
+    }
+    
+    class func description() -> UIColor {
+        return UIColor(hex: "757575")
+    }
+    
+    class func border() -> UIColor {
+        return UIColor(hex: "e0e0e0")
+    }
 }
