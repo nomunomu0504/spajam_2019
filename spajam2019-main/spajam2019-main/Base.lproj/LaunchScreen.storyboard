@@ -1,25 +1,88 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Ky5-Fs-6h7">
+    <device id="retina5_9" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
-        <scene sceneID="EHf-IW-A2E">
+        <scene sceneID="UYV-76-SiW">
             <objects>
-                <viewController id="01J-lp-oVM" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                <viewController id="Ky5-Fs-6h7" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="jiD-Kz-afo">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="splash.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="GwS-GA-afD">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="10_潤目アリア.png" translatesAutoresizingMaskIntoConstraints="NO" id="HQ4-Ay-Rdh">
+                                <rect key="frame" x="97" y="44" width="212" height="398"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="05_有馬妹.png" translatesAutoresizingMaskIntoConstraints="NO" id="bfv-RL-00i">
+                                <rect key="frame" x="-21" y="107" width="183" height="354"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="02_箱根.png" translatesAutoresizingMaskIntoConstraints="NO" id="2RY-NN-eIC">
+                                <rect key="frame" x="218" y="107" width="184" height="354"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="184" id="uX4-8a-vN1"/>
+                                </constraints>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.60000002384185791" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="gnE-vS-yeM">
+                                <rect key="frame" x="0.0" y="472" width="375" height="128"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo.png" translatesAutoresizingMaskIntoConstraints="NO" id="C8G-50-ChS">
+                                <rect key="frame" x="13" y="472" width="349" height="128"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="128" id="I2T-xi-ORp"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="C8G-50-ChS" firstAttribute="centerX" secondItem="gnE-vS-yeM" secondAttribute="centerX" id="0ad-fe-AAD"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="2RY-NN-eIC" secondAttribute="trailing" constant="-43" id="4Ve-Fn-DaM"/>
+                            <constraint firstItem="gnE-vS-yeM" firstAttribute="top" secondItem="bfv-RL-00i" secondAttribute="bottom" constant="11" id="7YH-VD-JBn"/>
+                            <constraint firstItem="HQ4-Ay-Rdh" firstAttribute="leading" secondItem="RAr-g4-Ite" secondAttribute="leading" constant="97" id="9GB-ED-jIi"/>
+                            <constraint firstItem="RAr-g4-Ite" firstAttribute="trailing" secondItem="HQ4-Ay-Rdh" secondAttribute="trailing" constant="66" id="ALW-Mh-GTd"/>
+                            <constraint firstAttribute="bottom" secondItem="GwS-GA-afD" secondAttribute="bottom" id="BL5-Ld-pTe"/>
+                            <constraint firstItem="GwS-GA-afD" firstAttribute="trailing" secondItem="gnE-vS-yeM" secondAttribute="trailing" id="Hxk-rt-3hc"/>
+                            <constraint firstItem="2RY-NN-eIC" firstAttribute="leading" secondItem="bfv-RL-00i" secondAttribute="trailing" constant="56" id="KG2-d5-EY9"/>
+                            <constraint firstItem="gnE-vS-yeM" firstAttribute="top" secondItem="C8G-50-ChS" secondAttribute="top" id="Lhx-XT-38v"/>
+                            <constraint firstItem="HQ4-Ay-Rdh" firstAttribute="top" secondItem="RAr-g4-Ite" secondAttribute="top" id="SsN-Ih-BHo"/>
+                            <constraint firstItem="bfv-RL-00i" firstAttribute="top" secondItem="2RY-NN-eIC" secondAttribute="top" id="Vcd-bu-nja"/>
+                            <constraint firstItem="RAr-g4-Ite" firstAttribute="bottom" secondItem="C8G-50-ChS" secondAttribute="bottom" constant="178" id="Z35-8L-VYX"/>
+                            <constraint firstItem="bfv-RL-00i" firstAttribute="bottom" secondItem="2RY-NN-eIC" secondAttribute="bottom" id="aPb-7h-nWo"/>
+                            <constraint firstAttribute="trailing" secondItem="GwS-GA-afD" secondAttribute="trailing" id="bIt-Cd-HJN"/>
+                            <constraint firstItem="GwS-GA-afD" firstAttribute="top" secondItem="jiD-Kz-afo" secondAttribute="top" id="bp8-A5-59J"/>
+                            <constraint firstItem="GwS-GA-afD" firstAttribute="leading" secondItem="gnE-vS-yeM" secondAttribute="leading" id="dTs-QR-xWy"/>
+                            <constraint firstItem="GwS-GA-afD" firstAttribute="leading" secondItem="jiD-Kz-afo" secondAttribute="leading" id="o33-2E-aYg"/>
+                            <constraint firstItem="gnE-vS-yeM" firstAttribute="top" secondItem="HQ4-Ay-Rdh" secondAttribute="bottom" constant="30" id="oqz-mi-zRA"/>
+                            <constraint firstItem="bfv-RL-00i" firstAttribute="leading" secondItem="jiD-Kz-afo" secondAttribute="leadingMargin" constant="-37" id="riI-E8-ErA"/>
+                            <constraint firstItem="C8G-50-ChS" firstAttribute="leading" secondItem="RAr-g4-Ite" secondAttribute="leading" constant="13" id="ttJ-8E-Pvi"/>
+                            <constraint firstItem="bfv-RL-00i" firstAttribute="top" secondItem="RAr-g4-Ite" secondAttribute="top" constant="63" id="xau-iW-Eqh"/>
+                            <constraint firstItem="gnE-vS-yeM" firstAttribute="bottom" secondItem="C8G-50-ChS" secondAttribute="bottom" id="y3h-CF-ywb"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="RAr-g4-Ite"/>
                     </view>
+                    <navigationItem key="navigationItem" id="Az0-Qp-d04"/>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aCa-yX-DaG" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="53" y="375"/>
+            <point key="canvasLocation" x="-339.13043478260875" y="-46.205357142857139"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="02_箱根.png" width="442.28570556640625" height="1147.4742431640625"/>
+        <image name="05_有馬妹.png" width="295.739990234375" height="706.67999267578125"/>
+        <image name="10_潤目アリア.png" width="2182" height="4000"/>
+        <image name="logo.png" width="365" height="63"/>
+        <image name="splash.jpg" width="1527" height="538"/>
+    </resources>
 </document>

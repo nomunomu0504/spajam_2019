@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="3mk-up-OyD">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="xGD-1o-Qo3">
     <device id="retina6_1" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -10,22 +10,6 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Navigation Controller-->
-        <scene sceneID="KXo-Sk-ooT">
-            <objects>
-                <navigationController id="XZU-gG-GHV" sceneMemberID="viewController">
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="rEB-1a-coS">
-                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <connections>
-                        <segue destination="xGD-1o-Qo3" kind="relationship" relationship="rootViewController" id="uLQ-Wx-FSv"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="zvN-by-pov" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-1423" y="-46"/>
-        </scene>
         <!--View Controller-->
         <scene sceneID="Ovd-DY-89Q">
             <objects>
@@ -34,13 +18,46 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gbB-3Q-8DM">
-                                <rect key="frame" x="138" y="413.5" width="138" height="69"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="splash.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="UJn-Fk-BaP">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="10_潤目アリア.png" translatesAutoresizingMaskIntoConstraints="NO" id="lDv-Fj-1ct">
+                                <rect key="frame" x="97" y="44" width="251" height="482"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="05_有馬妹.png" translatesAutoresizingMaskIntoConstraints="NO" id="gTI-NK-fer">
+                                <rect key="frame" x="-17" y="107" width="214" height="438"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="138" id="08u-bE-aVx"/>
-                                    <constraint firstAttribute="height" constant="69" id="Dns-eo-aBu"/>
+                                    <constraint firstAttribute="height" constant="438" id="1sB-ID-tMe"/>
                                 </constraints>
-                                <state key="normal" title="Button"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="02_箱根.png" translatesAutoresizingMaskIntoConstraints="NO" id="3na-HQ-cCc">
+                                <rect key="frame" x="253" y="107" width="184" height="438"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="184" id="4O8-Ig-oDG"/>
+                                </constraints>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.59999999999999998" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="OvY-Mu-vZw">
+                                <rect key="frame" x="0.0" y="556" width="414" height="128"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo.png" translatesAutoresizingMaskIntoConstraints="NO" id="wKa-Hs-mYH">
+                                <rect key="frame" x="13" y="556" width="388" height="128"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="128" id="8bA-RJ-DbG"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gbB-3Q-8DM">
+                                <rect key="frame" x="138" y="737" width="138" height="69"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="69" id="5Ga-pa-HnR"/>
+                                </constraints>
+                                <state key="normal" title="はじめる"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                                 <connections>
                                     <segue destination="3mk-up-OyD" kind="showDetail" id="Gaa-Vq-JdV"/>
                                 </connections>
@@ -48,8 +65,30 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="gbB-3Q-8DM" firstAttribute="centerX" secondItem="8hM-xD-1DJ" secondAttribute="centerX" id="EVZ-yM-Ix6"/>
-                            <constraint firstItem="gbB-3Q-8DM" firstAttribute="centerY" secondItem="8hM-xD-1DJ" secondAttribute="centerY" id="LOE-RM-7cT"/>
+                            <constraint firstItem="gbB-3Q-8DM" firstAttribute="top" secondItem="OvY-Mu-vZw" secondAttribute="bottom" constant="53" id="2V9-qT-3cf"/>
+                            <constraint firstItem="gTI-NK-fer" firstAttribute="leading" secondItem="8hM-xD-1DJ" secondAttribute="leadingMargin" constant="-37" id="6B3-ux-JNx"/>
+                            <constraint firstItem="UJn-Fk-BaP" firstAttribute="top" secondItem="8hM-xD-1DJ" secondAttribute="top" id="Ey9-JZ-yd7"/>
+                            <constraint firstItem="gTI-NK-fer" firstAttribute="bottom" secondItem="3na-HQ-cCc" secondAttribute="bottom" id="Fgu-aB-OEA"/>
+                            <constraint firstItem="gbB-3Q-8DM" firstAttribute="top" secondItem="wKa-Hs-mYH" secondAttribute="bottom" constant="53" id="GDT-Jp-utz"/>
+                            <constraint firstItem="lDv-Fj-1ct" firstAttribute="top" secondItem="CQh-Lo-TUv" secondAttribute="top" id="GV0-pR-XNJ"/>
+                            <constraint firstItem="wKa-Hs-mYH" firstAttribute="centerX" secondItem="gbB-3Q-8DM" secondAttribute="centerX" id="JXu-O1-0wP"/>
+                            <constraint firstItem="gTI-NK-fer" firstAttribute="top" secondItem="CQh-Lo-TUv" secondAttribute="top" constant="63" id="M0r-bH-Bvl"/>
+                            <constraint firstItem="CQh-Lo-TUv" firstAttribute="bottom" secondItem="gbB-3Q-8DM" secondAttribute="bottom" constant="56" id="azk-7C-55J"/>
+                            <constraint firstItem="OvY-Mu-vZw" firstAttribute="leading" secondItem="wKa-Hs-mYH" secondAttribute="leading" constant="-13" id="dJN-6Z-TDd"/>
+                            <constraint firstItem="wKa-Hs-mYH" firstAttribute="leading" secondItem="CQh-Lo-TUv" secondAttribute="leading" constant="13" id="ege-8i-m2S"/>
+                            <constraint firstItem="3na-HQ-cCc" firstAttribute="leading" secondItem="gTI-NK-fer" secondAttribute="trailing" constant="56" id="fIq-xD-fIA"/>
+                            <constraint firstItem="wKa-Hs-mYH" firstAttribute="centerX" secondItem="8hM-xD-1DJ" secondAttribute="centerX" id="gew-Q2-Rk0"/>
+                            <constraint firstItem="wKa-Hs-mYH" firstAttribute="top" secondItem="lDv-Fj-1ct" secondAttribute="bottom" constant="30" id="j8Y-AF-ivO"/>
+                            <constraint firstItem="OvY-Mu-vZw" firstAttribute="top" secondItem="wKa-Hs-mYH" secondAttribute="top" id="kRC-jQ-VSv"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="3na-HQ-cCc" secondAttribute="trailing" constant="-43" id="kSx-E1-mEM"/>
+                            <constraint firstItem="CQh-Lo-TUv" firstAttribute="trailing" secondItem="lDv-Fj-1ct" secondAttribute="trailing" constant="66" id="lUf-Sk-zAv"/>
+                            <constraint firstItem="lDv-Fj-1ct" firstAttribute="leading" secondItem="CQh-Lo-TUv" secondAttribute="leading" constant="97" id="mri-J3-6Fx"/>
+                            <constraint firstItem="OvY-Mu-vZw" firstAttribute="trailing" secondItem="wKa-Hs-mYH" secondAttribute="trailing" constant="13" id="ql6-4v-x78"/>
+                            <constraint firstItem="UJn-Fk-BaP" firstAttribute="trailing" secondItem="OvY-Mu-vZw" secondAttribute="trailing" id="vIL-qv-Hl8"/>
+                            <constraint firstItem="gTI-NK-fer" firstAttribute="top" secondItem="3na-HQ-cCc" secondAttribute="top" id="wQx-8G-RUZ"/>
+                            <constraint firstItem="UJn-Fk-BaP" firstAttribute="leading" secondItem="OvY-Mu-vZw" secondAttribute="leading" id="wRb-l4-EJG"/>
+                            <constraint firstItem="gbB-3Q-8DM" firstAttribute="leading" secondItem="CQh-Lo-TUv" secondAttribute="leading" constant="138" id="wXd-eW-IAh"/>
+                            <constraint firstAttribute="bottom" secondItem="UJn-Fk-BaP" secondAttribute="bottom" id="yb9-dK-33g"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="CQh-Lo-TUv"/>
                     </view>
@@ -75,4 +114,11 @@
             <point key="canvasLocation" x="490" y="-981"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="02_箱根.png" width="442.28570556640625" height="1147.4742431640625"/>
+        <image name="05_有馬妹.png" width="295.739990234375" height="706.67999267578125"/>
+        <image name="10_潤目アリア.png" width="2182" height="4000"/>
+        <image name="logo.png" width="365" height="63"/>
+        <image name="splash.jpg" width="1527" height="538"/>
+    </resources>
 </document>

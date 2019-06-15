@@ -36,16 +36,12 @@ class PreConfessionViewController: UIViewController {
         
         self.buttonsData = buttonsData
         
-
-        
-        
         aiTalk = AITalk()
 
         // Do any additional setup after loading the view.
         // sceneの作成
         sceneView = SceneView(frame: self.view.frame)
         sceneView.imageView.image = UIImage(named: "01_ang")
-//        sceneView.backImageView.image = UIImage(named: "maturi")
         sceneView.delegate = self
         
 
@@ -61,7 +57,6 @@ class PreConfessionViewController: UIViewController {
                 sceneView.buttonsTitles[index] = button.text
             }
         }
-
 
         if let description = buttonsData.Data[sceneCounter].description {
             //            sceneView.description = description
