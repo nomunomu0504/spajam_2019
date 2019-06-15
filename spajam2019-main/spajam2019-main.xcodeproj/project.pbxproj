@@ -16,11 +16,9 @@
 		69F53ABC22B3EE5200956858 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 69F53ABA22B3EE5200956858 /* LaunchScreen.storyboard */; };
 		69F53AC722B3EE5200956858 /* spajam2019_mainTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69F53AC622B3EE5200956858 /* spajam2019_mainTests.swift */; };
 		69F53AD222B3EE5200956858 /* spajam2019_mainUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69F53AD122B3EE5200956858 /* spajam2019_mainUITests.swift */; };
-		997A2BC822B4DBD7005C44A7 /* NomunomuView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 997A2BC622B4DBD7005C44A7 /* NomunomuView.xib */; };
 		997A2BCA22B4DECB005C44A7 /* AITalk.swift in Sources */ = {isa = PBXBuildFile; fileRef = 997A2BC922B4DECB005C44A7 /* AITalk.swift */; };
 		99D0483522B4B0FC00DC63BE /* JSONModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99D0483422B4B0FC00DC63BE /* JSONModel.swift */; };
 		99D0483722B4BDB900DC63BE /* AITalkWebAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99D0483622B4BDB900DC63BE /* AITalkWebAPI.swift */; };
-		99D0483922B4BF0400DC63BE /* NomunomuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99D0483822B4BF0400DC63BE /* NomunomuViewController.swift */; };
 		99D0483F22B4C49800DC63BE /* UIView+NibInstantiatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99D0483E22B4C49800DC63BE /* UIView+NibInstantiatable.swift */; };
 		B8FC1F409496EA5A44EC05F6 /* Pods_spajam2019_main.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C57E7B81BB5D2C80B2D2DDBC /* Pods_spajam2019_main.framework */; };
 		D81127B7428CC551D4E33993 /* Pods_spajam2019_mainTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7568F3B029704DCC45B865A5 /* Pods_spajam2019_mainTests.framework */; };
@@ -66,11 +64,9 @@
 		69F53AD322B3EE5200956858 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7568F3B029704DCC45B865A5 /* Pods_spajam2019_mainTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_spajam2019_mainTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		91DC72A9D1A5B80546D71A65 /* Pods-spajam2019-mainTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-spajam2019-mainTests.release.xcconfig"; path = "Target Support Files/Pods-spajam2019-mainTests/Pods-spajam2019-mainTests.release.xcconfig"; sourceTree = "<group>"; };
-		997A2BC622B4DBD7005C44A7 /* NomunomuView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NomunomuView.xib; sourceTree = "<group>"; };
 		997A2BC922B4DECB005C44A7 /* AITalk.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AITalk.swift; sourceTree = "<group>"; };
 		99D0483422B4B0FC00DC63BE /* JSONModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONModel.swift; sourceTree = "<group>"; };
 		99D0483622B4BDB900DC63BE /* AITalkWebAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AITalkWebAPI.swift; sourceTree = "<group>"; };
-		99D0483822B4BF0400DC63BE /* NomunomuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NomunomuViewController.swift; sourceTree = "<group>"; };
 		99D0483E22B4C49800DC63BE /* UIView+NibInstantiatable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+NibInstantiatable.swift"; sourceTree = "<group>"; };
 		C57E7B81BB5D2C80B2D2DDBC /* Pods_spajam2019_main.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_spajam2019_main.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CFD2F6F21B13830383A69048 /* Pods_spajam2019_mainUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_spajam2019_mainUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -186,8 +182,6 @@
 			children = (
 				99D0483622B4BDB900DC63BE /* AITalkWebAPI.swift */,
 				99D0483422B4B0FC00DC63BE /* JSONModel.swift */,
-				99D0483822B4BF0400DC63BE /* NomunomuViewController.swift */,
-				997A2BC622B4DBD7005C44A7 /* NomunomuView.xib */,
 				99D0483E22B4C49800DC63BE /* UIView+NibInstantiatable.swift */,
 				997A2BC922B4DECB005C44A7 /* AITalk.swift */,
 			);
@@ -331,7 +325,6 @@
 			files = (
 				69F53ABC22B3EE5200956858 /* LaunchScreen.storyboard in Resources */,
 				69F53AB922B3EE5200956858 /* Assets.xcassets in Resources */,
-				997A2BC822B4DBD7005C44A7 /* NomunomuView.xib in Resources */,
 				69F53AB422B3EE5000956858 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -447,7 +440,6 @@
 				99D0483F22B4C49800DC63BE /* UIView+NibInstantiatable.swift in Sources */,
 				69F53AB122B3EE5000956858 /* ViewController.swift in Sources */,
 				692D7D1D22B467D9009363BA /* UIcolor+hex.swift in Sources */,
-				99D0483922B4BF0400DC63BE /* NomunomuViewController.swift in Sources */,
 				99D0483722B4BDB900DC63BE /* AITalkWebAPI.swift in Sources */,
 				69F53AB722B3EE5000956858 /* spajam2019_main.xcdatamodeld in Sources */,
 				69F53AAF22B3EE5000956858 /* AppDelegate.swift in Sources */,
