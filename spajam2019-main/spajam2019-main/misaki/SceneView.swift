@@ -43,13 +43,21 @@ class SceneView: UIView {
         label.textColor = UIColor.description()
         label.backgroundColor = .white
         label.layer.borderColor = UIColor(hex: "E9546A").cgColor
-        label.layer.borderWidth = 3
-        label.layer.cornerRadius = 6
+        label.layer.borderWidth = 5
+        label.layer.cornerRadius = 10
         label.layer.masksToBounds = true
+        
+        label.frame = CGRect(x: bounds.origin.x + 50,
+                             y: bounds.origin.y + 50,
+                            width: bounds.width - 50 * 2,
+                            height: 60)
         
         buttons = [button1, button2, button3]
         
+        var base_y:CGFloat = 150
         for (index, button) in buttons.enumerated() {
+            button.frame = CGRect(x: bounds.origin.x + 50, y: (bounds.origin.y + base_y), width: bounds.width - 50 * 2, height: 30)
+            base_y += 60
             button.backgroundColor = UIColor.white
             button.backgroundColor = .white
             button.layer.borderColor = UIColor.border().cgColor

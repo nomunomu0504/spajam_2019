@@ -16,7 +16,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        
+        // sceneの作成
         sceneView = SceneView(frame: self.view.frame)
         sceneView.imageView.image = UIImage(named: "01_ang")
         sceneView.backImageView.image = UIImage(named: "maturi")
