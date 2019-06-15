@@ -15,10 +15,12 @@ protocol SceneViewDelegate: class {
 class SceneView: UIView {
     @IBOutlet weak var imageView: UIImageView!
     @IBOutlet weak var label: UILabel!
+    var _view: UIView!
     
     @IBAction func labelTapped(_ sender: UITapGestureRecognizer) {
         let _instance = buttonSelector(frame: CGRect(x: 0, y: 290, width: 375, height: 295))
-        let _view = _instance.selectorView()
+        _instance.buttonsTitles = buttonsTitles
+        _view = _instance.selectorView()
         
         self.addSubview(_view)
     }
@@ -28,6 +30,7 @@ class SceneView: UIView {
     
     
     var buttons: Array<UIButton>!
+    var buttonsTitles: Array<String>!
     var button5: UIButton!
     
     weak var delegate: SceneViewDelegate?

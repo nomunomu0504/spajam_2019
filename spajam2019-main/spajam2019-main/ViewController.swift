@@ -28,6 +28,19 @@ class ViewController: UIViewController {
     var ImageView: UIImageView!
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        guard let StoryData = try? getJSONDataStory() else {
+            print("error1")
+            return
+        }
+        
+        guard let buttonsData = try? JSONDecoder().decode(JSONData.self, from: StoryData) else {
+            print("error end")
+            return
+        }
+        
+        self.buttonsData = buttonsData
+        
 
         aiTalk = AITalk()
         // sceneの作成
@@ -41,17 +54,7 @@ class ViewController: UIViewController {
         aiTalk.text2talk(text: "こんにちはー世界")
 
 
-        guard let StoryData = try? getJSONDataStory() else {
-            print("error1")
-            return
-        }
 
-        guard let buttonsData = try? JSONDecoder().decode(JSONData.self, from: StoryData) else {
-            print("error end")
-            return
-        }
-
-        self.buttonsData = buttonsData
 
     }
 

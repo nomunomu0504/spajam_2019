@@ -35,6 +35,9 @@ class buttonSelector : UIView {
     }
     
     var overlayView = UIView()
+    
+    var buttonsTitles: Array<String>!    
+    
     func selectorView() -> UIView {
         let appDelegate = UIApplication.shared.delegate as! AppDelegate
         overlayView.frame = CGRect(x: 0, y: 290, width: 375, height: 295)
@@ -57,6 +60,9 @@ class buttonSelector : UIView {
             button.layer.cornerRadius = 5
             button.layer.masksToBounds = true
             button.tag = index
+            button.setTitle(buttonsTitles[index], for: .normal)
+//            button.tintColor = UIColor.red
+            button.setTitleColor(UIColor.description(), for: .normal)
             button.addTarget(self, action: #selector(buttonTapped(_:)), for: .touchUpInside)
             overlayView.addSubview(button)
         }

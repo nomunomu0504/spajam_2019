@@ -12,9 +12,17 @@ class PreConfessionViewController: UIViewController {
     
     var sceneView: SceneView!
     var ImageView: UIImageView!
-
+    
+    var aiTalk: AITalk!
+    
+    var buttonsData: JSONData!
+    
+    var sceneCounter = 0
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        aiTalk = AITalk()
 
         // Do any additional setup after loading the view.
         // sceneの作成
@@ -24,6 +32,27 @@ class PreConfessionViewController: UIViewController {
         sceneView.delegate = self
         
         view.addSubview(sceneView)
+        
+        aiTalk.text2talk(text: "こんにちはー世界")
+        
+        
+        guard let StoryData = try? getJSONDataStory() else {
+            print("error1")
+            return
+        }
+        
+        guard let buttonsData = try? JSONDecoder().decode(JSONData.self, from: StoryData) else {
+            print("error end")
+            return
+        }
+        
+        self.buttonsData = buttonsData
+    }
+    
+    func getJSONDataStory() throws -> Data? {
+        guard let path = Bundle.main.path(forResource: "test3", ofType: "json") else { return nil }
+        let url = URL(fileURLWithPath: path)
+        return try Data(contentsOf: url)
     }
     
 
@@ -43,6 +72,33 @@ extension PreConfessionViewController: SceneViewDelegate {
     func sceneViewButtonDidTapped(sender: UIButton) {
         // sceneviewのbuttonがタップされた時に呼ばれる
         print(sender.tag) // buttonのid 上から0
+        
+        if let unwrapped = buttonsData.Data[sceneCounter].settings?.word {
+            print(unwrapped)
+            sceneView.label.text = unwrapped
+            aiTalk.text2talk(text: unwrapped)
+        }
+        
+        if let buttons  = buttonsData.Data[sceneCounter].settings?.Button {
+            for (index, button) in buttons.enumerated() {
+                print("button text" + button.text)
+                sceneView.buttonsTitles[index] = button.text
+            }
+        }
+        
+        
+        if let description = buttonsData.Data[sceneCounter].description {
+            //            sceneView.description = description
+        }
+        //
+        if let background = buttonsData.Data[sceneCounter].backgroundImage {
+            sceneView.backImageView.image = UIImage(named: background)
+        }
+        
+        
+        sceneCounter += 1
+        
+        
         if let viewWithTag = self.view.viewWithTag(999) {
             viewWithTag.removeFromSuperview()
         } else{
