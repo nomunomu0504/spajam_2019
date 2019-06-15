@@ -65,6 +65,7 @@ class PreConfessionViewController: UIViewController {
 
         if let description = buttonsData.Data[sceneCounter].description {
             //            sceneView.description = description
+            print(description)
         }
         //
         if let background = buttonsData.Data[sceneCounter].backgroundImage {

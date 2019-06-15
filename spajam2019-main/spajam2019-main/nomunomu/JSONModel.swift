@@ -33,7 +33,7 @@ struct _data : Codable              // データ
     var settings: _settings?
 //    var settings : _settings     // 各種設定群
     var description : String?        // ナレーション文章
-    var backgroundImage : String?    // 背景画像
+    var backgroundImage : String!    // 背景画像
 }
 
 struct JSONData : Codable   // データ群
