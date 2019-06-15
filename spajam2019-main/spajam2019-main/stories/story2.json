@@ -1,0 +1,365 @@
+{
+    "Data" :
+        [
+          {
+            "settings": {
+              "word": "｢ごめーん、待った?｣",
+              "Button": [
+                {
+                  "text": "ううん、全然",
+                  "rate": 1,
+                  "reply": "",
+                  "face": "01_nor",
+                  "nextScene": 1
+                },
+                {
+                  "text": "遅いよ",
+                  "rate": 1,
+                  "reply": "",
+                  "face": "01_nor",
+                  "nextScene": 1
+                },
+                {
+                  "text": "楽しみすぎて気にならなかった",
+                  "rate": 1,
+                  "reply": "",
+                  "face": "01_nor",
+                  "nextScene": 1
+                }
+              ]
+            },
+            "description": "(今日は花火大会。気になってる娘を奇跡的にデートに誘うことができた。今日は告白できるよう頑張るぞ…!)",
+            "backgroundImage": "maturi"
+          },
+          {
+            "settings": {
+              "word": "｢…どうしたの?｣",
+              "Button": [
+                {
+                  "text": "僕のためにわざわざ浴衣着てきたんだ",
+                  "rate": 1,
+                  "reply": "｢わざわざ着てきたんだよ、早く行こう｣",
+                  "face": "01_ang",
+                  "nextScene": 1
+                },
+                {
+                  "text": "似合ってるね",
+                  "rate": 1,
+                  "reply": "｢そう?良かった、はやく行こっ｣",
+                  "face": "01_la",
+                  "nextScene": 1
+                },
+                {
+                  "text": "そろそろ行きますか",
+                  "rate": 1,
+                  "reply": "｢はーい｣",
+                  "face": "01_nor",
+                  "nextScene": 1
+                }
+              ]
+            },
+            "description": "(わざわざ浴衣着てきたんだ…)",
+            "backgroundImage": "maturi"
+          },
+          {
+            "settings": {
+              "word": "｢そうだね｣",
+              "Button": [
+                {
+                  "text": "はぐれないようにね",
+                  "rate": 1,
+                  "reply": "｢うん｣",
+                  "face": "01_nor",
+                  "nextScene": 1
+                },
+                {
+                  "text": "(周りの人とぶつからないように少し前気味で、後ろも確認しよう)",
+                  "rate": 1,
+                  "reply": "",
+                  "face": "01_nor",
+                  "nextScene": 1
+                },
+                {
+                  "text": "手でも繋ぐ?",
+                  "rate": 1,
+                  "reply": "｢いや、いいかな｣",
+                  "face": "01_koma",
+                  "nextScene": 1
+                }
+              ],
+              "description": "｢やっぱり人が多いな｣",
+              "backgroundImage": "maturi"
+            }
+          },
+          {
+            "settings": {
+              "word": "｢色々あるね｣",
+              "Button": [
+                {
+                  "text": "焼きそばでも食べよう",
+                  "rate": 1,
+                  "reply": "｢いいね｣",
+                  "face": "01_nor",
+                  "nextScene": 1
+                },
+                {
+                  "text": "かき氷でも食べよう",
+                  "rate": 1,
+                  "reply": "｢いいね｣",
+                  "face": "01_nor",
+                  "nextScene": 2
+                },
+                {
+                  "text": "",
+                  "rate": 1,
+                  "reply": "｢｣",
+                  "face": "",
+                  "nextScene": 3
+                }
+              ],
+              "description": "｢出店でも見ようか｣",
+              "backgroundImage": "maturi"
+            }
+          },
+          {
+            "settings": {
+              "word": "｢うん?｣",
+              "Button": [
+                {
+                  "text": "唇が油でテカテカになってる",
+                  "rate": 1,
+                  "reply": "｢これはそういうの塗ったの｣",
+                  "face": "01_ang2",
+                  "nextScene": 1
+                },
+                {
+                  "text": "",
+                  "rate": 1,
+                  "reply": "",
+                  "face": "",
+                  "nextScene": 1
+                },
+                {
+                  "text": "歯に青のりついてる",
+                  "rate": 1,
+                  "reply": "｢ほんと?えー食べなきゃよかった｣",
+                  "face": "01_koma",
+                  "nextScene": 1
+                }
+              ],
+              "description": "｢あっ｣",
+              "backgroundImage": "maturi"
+            }
+          },
+          {
+            "settings": {
+              "word": "｢うん?｣",
+              "Button": [
+                {
+                  "text": "",
+                  "rate": 1,
+                  "reply": "｢｣",
+                  "face": "",
+                  "nextScene": 1
+                },
+                {
+                  "text": "舌が真緑になってる",
+                  "rate": 1,
+                  "reply": "｢えー嘘ー｣",
+                  "face": "01_koma",
+                  "nextScene": 1
+                },
+                {
+                  "text": "",
+                  "rate": 1,
+                  "reply": "",
+                  "face": "",
+                  "nextScene": 1
+                }
+              ],
+              "description": "｢あっ｣",
+              "backgroundImage": "maturi"
+            }
+          },
+          {
+            "settings": {
+              "word": "｢うん?｣",
+              "Button": [
+                {
+                  "text": "",
+                  "rate": 1,
+                  "reply": "｢｣",
+                  "face": "",
+                  "nextScene": 1
+                },
+                {
+                  "text": "",
+                  "rate": 1,
+                  "reply": "",
+                  "face": "",
+                  "nextScene": 1
+                },
+                {
+                  "text": "",
+                  "rate": 1,
+                  "reply": "",
+                  "face": "",
+                  "nextScene": 1
+                }
+              ],
+              "description": "｢あっ｣",
+              "backgroundImage": "maturi"
+            }
+          },
+          {
+            "settings": {
+              "word": "(人多いし知り合いにも会うよね…)",
+              "Button": [
+                {
+                  "text": "茶化すなよ、友達",
+                  "rate": 1,
+                  "reply": "(ふーん友達、ね)",
+                  "face": "01_koma2",
+                  "nextScene": 1
+                },
+                {
+                  "text": "",
+                  "rate": 1,
+                  "reply": "｢｣",
+                  "face": "",
+                  "nextScene": 1
+                },
+                {
+                  "text": "彼女、可愛いでしょ",
+                  "rate": 1,
+                  "reply": "",
+                  "face": "01_ang2",
+                  "nextScene": 1
+                }
+              ],
+              "description": "｢あれ?あなたの名前じゃん、彼女と来てんの｣",
+              "backgroundImage": "maturi"
+            }
+          },
+          {
+            "settings": {
+              "word": "｢あっ花火始まっちゃった!早く早く!｣",
+              "Button": [
+                {
+                  "text": "",
+                  "rate": 1,
+                  "reply": "｢｣",
+                  "face": "",
+                  "nextScene": 1
+                },
+                {
+                  "text": "ちょっと疲れたから先に見に行ってて",
+                  "rate": 1,
+                  "reply": "｢｣",
+                  "face": "",
+                  "nextScene": 1
+                },
+                {
+                  "text": "そんなに急がなくても終わらないって",
+                  "rate": 1,
+                  "reply": "｢たくさん見たいじゃない｣",
+                  "face": "01_koma",
+                  "nextScene": 1
+                }
+              ],
+              "description": "(結構話したしそろそろいい感じじゃないか?)ﾄﾞｰﾝ",
+              "backgroundImage": "maturi"
+            }
+          },
+          {
+            "settings": {
+              "word": "｢わーすごーい｣",
+              "Button": [
+                {
+                  "text": "いや今日は一緒に見れてよかったな",
+                  "rate": 1,
+                  "reply": "｢それは良かったですね｣",
+                  "face": "01_la",
+                  "nextScene": 1
+                },
+                {
+                  "text": "ほんとすごいね",
+                  "rate": 1,
+                  "reply": "(それしか言えないのかな)",
+                  "face": "01_koma",
+                  "nextScene": 1
+                },
+                {
+                  "text": "花火も綺麗君も綺麗で最高",
+                  "rate": 1,
+                  "reply": "｢ちょっと何言ってるのか分からないけど｣",
+                  "face": "01_ang",
+                  "nextScene": 1
+                }
+              ],
+              "description": "🎆🎇🎆",
+              "backgroundImage": "hanabi"
+            }
+          },
+          {
+            "settings": {
+              "word": "｢少し寂しいね｣",
+              "Button": [
+                {
+                  "text": "あのさ…ちょっと話があるんだけど…",
+                  "rate": 1,
+                  "reply": "どうしたの",
+                  "face": "01_nor",
+                  "nextScene": 1
+                },
+                {
+                    "text": "",
+                    "rate": 1,
+                    "reply": "",
+                    "face": "",
+                    "nextScene": 1
+                },
+                {
+                    "text": "",
+                    "rate": 1,
+                    "reply": "",
+                    "face": "",
+                    "nextScene": 1
+                }
+              ],
+              "description": "｢花火終わっちゃったね｣",
+              "backgroundImage": "hanabi"
+            }
+          },
+          {
+            "settings": {
+              "word": "…",
+              "Button": [
+                {
+                  "text": "",
+                  "rate": 1,
+                  "reply": "",
+                  "face": "",
+                  "nextScene": 1
+                },
+                {
+                    "text": "",
+                    "rate": 1,
+                    "reply": "",
+                    "face": "",
+                    "nextScene": 1
+                },
+                {
+                    "text": "",
+                    "rate": 1,
+                    "reply": "",
+                    "face": "",
+                    "nextScene": 1
+                }
+              ],
+              "description": "｢好きです、付き合ってください｣",
+              "backgroundImage": "maturi"
+            }
+          }
+        ]
+}

@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		692D7D1D22B467D9009363BA /* UIcolor+hex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 692D7D1C22B467D9009363BA /* UIcolor+hex.swift */; };
+		693F489F22B58BEC00C5D807 /* story2.json in Resources */ = {isa = PBXBuildFile; fileRef = 693F489E22B58BEC00C5D807 /* story2.json */; };
 		6972A5A522B4B7A2003C9660 /* SceneView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6972A5A422B4B7A2003C9660 /* SceneView.swift */; };
 		6972A5A822B4B7D5003C9660 /* SceneView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6972A5A722B4B7D5003C9660 /* SceneView.xib */; };
 		6972A5B022B4BEA1003C9660 /* 01_ang.png in Resources */ = {isa = PBXBuildFile; fileRef = 6972A5AA22B4BEA0003C9660 /* 01_ang.png */; };
@@ -74,6 +75,7 @@
 		5F94C41C6C2A7ED719904D41 /* Pods-spajam2019-mainTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-spajam2019-mainTests.debug.xcconfig"; path = "Target Support Files/Pods-spajam2019-mainTests/Pods-spajam2019-mainTests.debug.xcconfig"; sourceTree = "<group>"; };
 		6884ACFDDEA50D25124D7A27 /* Pods-spajam2019-main.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-spajam2019-main.debug.xcconfig"; path = "Target Support Files/Pods-spajam2019-main/Pods-spajam2019-main.debug.xcconfig"; sourceTree = "<group>"; };
 		692D7D1C22B467D9009363BA /* UIcolor+hex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIcolor+hex.swift"; sourceTree = "<group>"; };
+		693F489E22B58BEC00C5D807 /* story2.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = story2.json; sourceTree = "<group>"; };
 		6972A5A422B4B7A2003C9660 /* SceneView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneView.swift; sourceTree = "<group>"; };
 		6972A5A722B4B7D5003C9660 /* SceneView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SceneView.xib; sourceTree = "<group>"; };
 		6972A5AA22B4BEA0003C9660 /* 01_ang.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 01_ang.png; sourceTree = "<group>"; };
@@ -174,6 +176,7 @@
 		694F17F922B503000029A3DC /* stories */ = {
 			isa = PBXGroup;
 			children = (
+				693F489E22B58BEC00C5D807 /* story2.json */,
 				997A2BDB22B558D7005C44A7 /* story.json */,
 			);
 			path = stories;
@@ -454,6 +457,7 @@
 				997A2BEC22B56C2A005C44A7 /* 09_湯布院.png in Resources */,
 				997A2BEE22B56C2A005C44A7 /* 00_スクナヒコ.png in Resources */,
 				6972A5B022B4BEA1003C9660 /* 01_ang.png in Resources */,
+				693F489F22B58BEC00C5D807 /* story2.json in Resources */,
 				997A2BF222B56C2A005C44A7 /* 01_草津.png in Resources */,
 				997A2BF422B56C2A005C44A7 /* 07_登別.png in Resources */,
 				6972A5B522B4BEA1003C9660 /* 01_nor.png in Resources */,
@@ -756,14 +760,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = NVZSU5S42R;
+				DEVELOPMENT_TEAM = 62ZE3Y948A;
 				INFOPLIST_FILE = "spajam2019-main/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.arsjam.spajam;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.arsjam.spajam-2019";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -776,14 +780,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = NVZSU5S42R;
+				DEVELOPMENT_TEAM = 62ZE3Y948A;
 				INFOPLIST_FILE = "spajam2019-main/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.arsjam.spajam;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.arsjam.spajam-2019";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

@@ -21,6 +21,10 @@ class PreConfessionViewController: UIViewController {
     
     var repFlag = false
     
+    var dataLength = 0
+    
+    var tag = 0
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -44,6 +48,7 @@ class PreConfessionViewController: UIViewController {
         sceneView.imageView.image = UIImage(named: "01_ang")
         sceneView.delegate = self
         
+        dataLength = buttonsData.Data.count
 
         if let unwrapped = buttonsData.Data[sceneCounter].settings?.word {
             print(unwrapped)
@@ -76,7 +81,7 @@ class PreConfessionViewController: UIViewController {
     }
     
     func getJSONDataStory() throws -> Data? {
-        guard let path = Bundle.main.path(forResource: "story", ofType: "json") else { return nil }
+        guard let path = Bundle.main.path(forResource: "story2", ofType: "json") else { return nil }
         let url = URL(fileURLWithPath: path)
         return try Data(contentsOf: url)
     }
@@ -97,6 +102,13 @@ class PreConfessionViewController: UIViewController {
 extension PreConfessionViewController: SceneViewDelegate {
     func sceneLabelTapped(sender: UITapGestureRecognizer) {
         if repFlag {
+            
+            
+            if let chara = buttonsData.Data[sceneCounter-1].settings?.Button[tag].face {
+                if chara != "" {
+                    sceneView.imageView.image = UIImage(named: chara)
+                }
+            }
             
             if let buttons  = buttonsData.Data[sceneCounter].settings?.Button {
                 for (index, button) in buttons.enumerated() {
@@ -129,6 +141,10 @@ extension PreConfessionViewController: SceneViewDelegate {
     func sceneViewButtonDidTapped(sender: UIButton) {
         // sceneviewのbuttonがタップされた時に呼ばれる
         print(sender.tag) // buttonのid 上から0
+        tag = sender.tag
+        if sceneCounter == buttonsData.Data.count {
+            return
+        }
         
         if let rep = buttonsData.Data[sceneCounter-1].settings?.Button[sender.tag].reply {
             print(rep)
@@ -140,6 +156,13 @@ extension PreConfessionViewController: SceneViewDelegate {
         }
 
         if repFlag == false {
+            
+            if let chara = buttonsData.Data[sceneCounter-1].settings?.Button[sender.tag].face {
+                if chara != "" {
+                    sceneView.imageView.image = UIImage(named: chara)
+                }
+            }
+            
             if let unwrapped = buttonsData.Data[sceneCounter].settings?.word {
                 print(unwrapped)
                 sceneView.label.text = unwrapped
