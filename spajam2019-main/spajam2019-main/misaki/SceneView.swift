@@ -16,11 +16,16 @@ class SceneView: UIView {
     @IBOutlet weak var imageView: UIImageView!
     @IBOutlet weak var label: UILabel!
     
+    @IBAction func labelTapped(_ sender: UITapGestureRecognizer) {
+        let _instance = buttonSelector(frame: CGRect(x: 0, y: 290, width: 375, height: 295))
+        let _view = _instance.selectorView()
+        
+        self.addSubview(_view)
+    }
+    
+    
     @IBOutlet weak var backImageView: UIImageView!
-
-    @IBOutlet weak var button1: UIButton!
-    @IBOutlet weak var button2: UIButton!
-    @IBOutlet weak var button3: UIButton!
+    
     
     var buttons: Array<UIButton>!
     var button5: UIButton!
@@ -40,6 +45,7 @@ class SceneView: UIView {
     
     override func layoutSubviews() {
         super.layoutSubviews()
+        
         label.textColor = UIColor.description()
         label.backgroundColor = .white
         label.layer.borderColor = UIColor(hex: "E9546A").cgColor
@@ -47,41 +53,25 @@ class SceneView: UIView {
         label.layer.cornerRadius = 10
         label.layer.masksToBounds = true
         
-        label.frame = CGRect(x: bounds.origin.x + 50,
-                             y: bounds.origin.y + 50,
-                            width: bounds.width - 50 * 2,
-                            height: 60)
-        
-        buttons = [button1, button2, button3]
-        
-        var button_y: CGFloat = 150
-        for (index, button) in buttons.enumerated() {
-            button.frame = CGRect(x: bounds.origin.x + 50, y: (bounds.origin.y + button_y), width: bounds.width - 50 * 2, height: 30)
-            button_y += 60
-            button.backgroundColor = UIColor.white
-            button.backgroundColor = .white
-            button.layer.borderColor = UIColor.border().cgColor
-            button.layer.borderWidth = 2
-            button.layer.cornerRadius = 5
-            button.layer.masksToBounds = true
-            button.tag = index
-            button.addTarget(self, action: #selector(buttonTapped(_:)), for: .touchUpInside)
-        }
+//        label.frame = CGRect(x: bounds.origin.x + 50,
+//                             y: bounds.origin.y + 50,
+//                            width: bounds.width - 50 * 2,
+//                            height: 60)
 
 //        backImageView.frame = CGRect(x: bounds.origin.x + 10,
 //                                     y: bounds.origin.y + 250,
 //                                     width: bounds.width - 10 * 2,
 //                                     height: 300)
-        imageView.frame =  CGRect(x: bounds.origin.x + 40,
-                                 y: bounds.origin.y + 350,
-                                 width: bounds.width - 30 * 2,
-                                 height: 500)
+//        imageView.frame =  CGRect(x: bounds.origin.x + 40,
+//                                 y: bounds.origin.y + 350,
+//                                 width: bounds.width - 30 * 2,
+//                                 height: 500)
         
     }
     
     @objc func buttonTapped(_ sender: UIButton) { // ボタンがタップされた時に呼ばれる
-        delegate?.sceneViewButtonDidTapped(sender: sender)
         
+        delegate?.sceneViewButtonDidTapped(sender: sender)
     }
     
     func loadNib() {
@@ -91,4 +81,10 @@ class SceneView: UIView {
         }
     }
         
+}
+
+extension SceneView: buttonSelectorDelegate {
+    func buttonTapped(sender: UIButton) {
+        print("tapped")
+    }
 }
