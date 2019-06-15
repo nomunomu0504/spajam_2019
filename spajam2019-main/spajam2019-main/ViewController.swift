@@ -74,13 +74,30 @@ class ViewController: UIViewController {
 extension ViewController: SceneViewDelegate {
     
     func sceneViewButtonDidTapped(sender: UIButton) {
-        // sceneviewのbuttonがタップされた時に呼ばれる
+        // sceneviewのb uttonがタップされた時に呼ばれる
         print(sender.tag) // buttonのid 上から0
         
-        if let unwrapped = buttonsData.Data[sceneCounter].settings?.Button[sender.tag].text {
+        if let unwrapped = buttonsData.Data[sceneCounter].settings?.word {
             print(unwrapped)
+            sceneView.label.text = unwrapped
             aiTalk.text2talk(text: unwrapped)
         }
+        
+        if let buttons  = buttonsData.Data[sceneCounter].settings?.Button {
+            for (index, button) in buttons.enumerated() {
+                sceneView.buttons[index].setTitle(button.text, for: .normal)
+            }
+        }
+        
+        
+        if let description = buttonsData.Data[sceneCounter].description {
+//            sceneView.description = description
+        }
+//
+        if let background = buttonsData.Data[sceneCounter].backgroundImage {
+            sceneView.backImageView.image = UIImage(named: background)
+        }
+        
         
         sceneCounter += 1
     }
