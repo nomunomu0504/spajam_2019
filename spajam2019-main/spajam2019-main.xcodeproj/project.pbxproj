@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		692D7D1D22B467D9009363BA /* UIcolor+hex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 692D7D1C22B467D9009363BA /* UIcolor+hex.swift */; };
 		693F489F22B58BEC00C5D807 /* story2.json in Resources */ = {isa = PBXBuildFile; fileRef = 693F489E22B58BEC00C5D807 /* story2.json */; };
+		693F48A322B5AD9700C5D807 /* EndView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 693F48A222B5AD9700C5D807 /* EndView.swift */; };
+		693F48A522B5B1FC00C5D807 /* EndView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 693F48A422B5B1FC00C5D807 /* EndView.xib */; };
 		6972A5A522B4B7A2003C9660 /* SceneView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6972A5A422B4B7A2003C9660 /* SceneView.swift */; };
 		6972A5A822B4B7D5003C9660 /* SceneView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6972A5A722B4B7D5003C9660 /* SceneView.xib */; };
 		6972A5B022B4BEA1003C9660 /* 01_ang.png in Resources */ = {isa = PBXBuildFile; fileRef = 6972A5AA22B4BEA0003C9660 /* 01_ang.png */; };
@@ -76,6 +78,8 @@
 		6884ACFDDEA50D25124D7A27 /* Pods-spajam2019-main.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-spajam2019-main.debug.xcconfig"; path = "Target Support Files/Pods-spajam2019-main/Pods-spajam2019-main.debug.xcconfig"; sourceTree = "<group>"; };
 		692D7D1C22B467D9009363BA /* UIcolor+hex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIcolor+hex.swift"; sourceTree = "<group>"; };
 		693F489E22B58BEC00C5D807 /* story2.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = story2.json; sourceTree = "<group>"; };
+		693F48A222B5AD9700C5D807 /* EndView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndView.swift; sourceTree = "<group>"; };
+		693F48A422B5B1FC00C5D807 /* EndView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EndView.xib; sourceTree = "<group>"; };
 		6972A5A422B4B7A2003C9660 /* SceneView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneView.swift; sourceTree = "<group>"; };
 		6972A5A722B4B7D5003C9660 /* SceneView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SceneView.xib; sourceTree = "<group>"; };
 		6972A5AA22B4BEA0003C9660 /* 01_ang.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 01_ang.png; sourceTree = "<group>"; };
@@ -299,6 +303,8 @@
 			children = (
 				6972A5A422B4B7A2003C9660 /* SceneView.swift */,
 				6972A5A722B4B7D5003C9660 /* SceneView.xib */,
+				693F48A222B5AD9700C5D807 /* EndView.swift */,
+				693F48A422B5B1FC00C5D807 /* EndView.xib */,
 				997A2BD922B52CAB005C44A7 /* buttonSelector.swift */,
 			);
 			path = misaki;
@@ -438,6 +444,7 @@
 			files = (
 				997A2BF822B56D83005C44A7 /* logo.png in Resources */,
 				6972A5BA22B4C5ED003C9660 /* hanabi.jpg in Resources */,
+				693F48A522B5B1FC00C5D807 /* EndView.xib in Resources */,
 				6972A5B822B4C56D003C9660 /* maturi.jpg in Resources */,
 				997A2BDC22B558D7005C44A7 /* story.json in Resources */,
 				6972A5A822B4B7D5003C9660 /* SceneView.xib in Resources */,
@@ -579,6 +586,7 @@
 				99D0483F22B4C49800DC63BE /* UIView+NibInstantiatable.swift in Sources */,
 				692D7D1D22B467D9009363BA /* UIcolor+hex.swift in Sources */,
 				997A2BD622B524EA005C44A7 /* PreConfessionViewController.swift in Sources */,
+				693F48A322B5AD9700C5D807 /* EndView.swift in Sources */,
 				99D0483722B4BDB900DC63BE /* AITalkWebAPI.swift in Sources */,
 				997A2BDA22B52CAB005C44A7 /* buttonSelector.swift in Sources */,
 				69F53AB722B3EE5000956858 /* spajam2019_main.xcdatamodeld in Sources */,
@@ -760,14 +768,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = NVZSU5S42R;
+				DEVELOPMENT_TEAM = 62ZE3Y948A;
 				INFOPLIST_FILE = "spajam2019-main/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.arsjam.spajam;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.arsjam.spajam-2019";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -780,14 +788,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = NVZSU5S42R;
+				DEVELOPMENT_TEAM = 62ZE3Y948A;
 				INFOPLIST_FILE = "spajam2019-main/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.arsjam.spajam;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.arsjam.spajam-2019";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

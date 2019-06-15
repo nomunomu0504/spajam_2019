@@ -136,6 +136,11 @@ extension PreConfessionViewController: SceneViewDelegate {
             
             repFlag = false
             sceneCounter += 1
+            if sceneCounter-1 >= buttonsData.Data.count-1 {
+                let endView = EndView(frame: self.view.frame)
+                view.addSubview(endView)
+                return
+            }
         }
     }
     
@@ -143,7 +148,9 @@ extension PreConfessionViewController: SceneViewDelegate {
         // sceneviewのbuttonがタップされた時に呼ばれる
         print(sender.tag) // buttonのid 上から0
         tag = sender.tag
-        if sceneCounter == buttonsData.Data.count {
+        if sceneCounter-1 >= buttonsData.Data.count-1 {
+            let endView = EndView(frame: self.view.frame)
+            view.addSubview(endView)
             return
         }
         
@@ -187,6 +194,11 @@ extension PreConfessionViewController: SceneViewDelegate {
             }
             
             sceneCounter += 1
+            if sceneCounter-1 >= buttonsData.Data.count-1 {
+                let endView = EndView(frame: self.view.frame)
+                view.addSubview(endView)
+                return
+            }
             
         }
         
