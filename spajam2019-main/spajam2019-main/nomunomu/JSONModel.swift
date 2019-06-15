@@ -15,6 +15,9 @@ struct _button : Codable  // 選択ボタン
     var reply : String    // ボタン押下後の返信
     var face : String     // 応答後の顔画像のパス
     var nextScene : Int   // シーンインデックスの増加度
+    var joy: Float
+    var sadness: Float
+    var anger: Float
 }
 
 struct _settings : Codable  // 各種設定
