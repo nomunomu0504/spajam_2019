@@ -136,6 +136,9 @@
 		69F53AAD22B3EE5000956858 /* spajam2019-main */ = {
 			isa = PBXGroup;
 			children = (
+				99D0483222B4ADBF00DC63BE /* misaki */,
+				99D0483122B4ADBF00DC63BE /* nomunomu */,
+				99D0483322B4ADBF00DC63BE /* resources */,
 				692D7D1B22B467C5009363BA /* extensions */,
 				69F53AAE22B3EE5000956858 /* AppDelegate.swift */,
 				69F53AB022B3EE5000956858 /* ViewController.swift */,
@@ -164,6 +167,27 @@
 				69F53AD322B3EE5200956858 /* Info.plist */,
 			);
 			path = "spajam2019-mainUITests";
+			sourceTree = "<group>";
+		};
+		99D0483122B4ADBF00DC63BE /* nomunomu */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = nomunomu;
+			sourceTree = "<group>";
+		};
+		99D0483222B4ADBF00DC63BE /* misaki */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = misaki;
+			sourceTree = "<group>";
+		};
+		99D0483322B4ADBF00DC63BE /* resources */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = resources;
 			sourceTree = "<group>";
 		};
 		F23AA215F3F6D2A3278D51E4 /* Pods */ = {
