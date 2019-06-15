@@ -44,6 +44,28 @@ struct AITalkWebAPI {
         ext            = "mp3";
     }
     
+    init(
+        _speaker_name: String = "nozomi_emo",
+        _style: String = "{\"j\":\"1.0\"}",
+        _input_type: String = "text",
+        _text: String,
+        _volume: String = "1.0",
+        _speed: String = "1.0",
+        _pitch: String = "1.0",
+        _range: String = "1.0"
+    ) {
+        username = AITalkWebAPI.AITALK_ID
+        password = AITalkWebAPI.AITALK_PW
+        speaker_name = _speaker_name
+        style = _style
+        input_type = _input_type
+        text = _text
+        volume = _volume
+        speed = _speed
+        pitch = _pitch
+        range = _range
+    }
+    
     // 文字列をURLエンコーディングして返す
     private func urlencode(string: String!) -> String! {
         return string.addingPercentEncoding(

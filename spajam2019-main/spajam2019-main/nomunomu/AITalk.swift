@@ -14,14 +14,38 @@ class AITalk : NSObject, AVAudioPlayerDelegate {
     var _player : AVAudioPlayer? = nil  // 再生プレイヤー
     private let FILENAME = "talking.mp3"
     
+    var aitalk : AITalkWebAPI?
+    
+    init(
+        _speaker_name: String = "nozomi_emo",
+        _style: String = "{\"j\":\"1.0\"}",
+        _input_type: String = "text",
+        _text: String,
+        _volume: String = "1.0",
+        _speed: String = "1.0",
+        _pitch: String = "1.0",
+        _range: String = "1.0"
+    ) {
+        self.aitalk = AITalkWebAPI(
+            _speaker_name: _speaker_name,
+            _style: _style,
+            _input_type: _input_type,
+            _text: _text,
+            _volume: _volume,
+            _speed: _speed,
+            _pitch: _pitch,
+            _range: _range
+        )
+    }
+    
     func text2talk(text: String)
     {
-        var aitalk = AITalkWebAPI()
-        aitalk.text = text
+//        self.aitalk = AITalkWebAPI()
+        self.aitalk!.text = text
         // aitalk.speaker_name = "nozomi_emo"
         // aitalk.style = "{\"j\":\"1.0\"}"
         
-        aitalk.synth(handler: onCompletedSynth)
+        self.aitalk!.synth(handler: onCompletedSynth)
     }
     
     // 再生完了イベントハンドラ
