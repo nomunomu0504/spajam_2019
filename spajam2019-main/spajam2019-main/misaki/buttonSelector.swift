@@ -36,7 +36,7 @@ class buttonSelector : UIView {
     
     var overlayView = UIView()
     
-    var buttonsTitles: Array<String>!    
+    var buttonsTitles: Array<String>! = ["a", "b", "c"]
     
     func selectorView() -> UIView {
         let appDelegate = UIApplication.shared.delegate as! AppDelegate

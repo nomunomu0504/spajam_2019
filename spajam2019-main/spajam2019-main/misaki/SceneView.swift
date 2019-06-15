@@ -30,7 +30,7 @@ class SceneView: UIView {
     
     
     var buttons: Array<UIButton>!
-    var buttonsTitles: Array<String>!
+    var buttonsTitles: Array<String>! = ["a", "b", "c"]
     var button5: UIButton!
     
     weak var delegate: SceneViewDelegate?

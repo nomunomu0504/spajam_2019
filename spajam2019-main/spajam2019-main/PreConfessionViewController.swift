@@ -22,20 +22,6 @@ class PreConfessionViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        aiTalk = AITalk()
-
-        // Do any additional setup after loading the view.
-        // sceneの作成
-        sceneView = SceneView(frame: self.view.frame)
-        sceneView.imageView.image = UIImage(named: "01_ang")
-        sceneView.backImageView.image = UIImage(named: "maturi")
-        sceneView.delegate = self
-        
-        view.addSubview(sceneView)
-        
-        aiTalk.text2talk(text: "こんにちはー世界")
-        
-        
         guard let StoryData = try? getJSONDataStory() else {
             print("error1")
             return
@@ -47,6 +33,52 @@ class PreConfessionViewController: UIViewController {
         }
         
         self.buttonsData = buttonsData
+        
+
+        
+        
+        aiTalk = AITalk()
+
+        // Do any additional setup after loading the view.
+        // sceneの作成
+        sceneView = SceneView(frame: self.view.frame)
+        sceneView.imageView.image = UIImage(named: "01_ang")
+        sceneView.backImageView.image = UIImage(named: "maturi")
+        sceneView.delegate = self
+        
+//
+//        if let unwrapped = buttonsData.Data[sceneCounter].settings?.word {
+//            print(unwrapped)
+//            sceneView.label.text = unwrapped
+//            aiTalk.text2talk(text: unwrapped)
+//        }
+//
+//        if let buttons  = buttonsData.Data[sceneCounter].settings?.Button {
+//            for (index, button) in buttons.enumerated() {
+//                print("button text" + button.text)
+////                sceneView.buttonsTitles[index] = button.text
+//            }
+//        }
+//
+//
+//        if let description = buttonsData.Data[sceneCounter].description {
+//            //            sceneView.description = description
+//        }
+//        //
+//        if let background = buttonsData.Data[sceneCounter].backgroundImage {
+//            sceneView.backImageView.image = UIImage(named: background)
+//        }
+        
+        
+        sceneCounter += 1
+        
+        
+        view.addSubview(sceneView)
+        
+        aiTalk.text2talk(text: "こんにちはー世界")
+        
+        
+
     }
     
     func getJSONDataStory() throws -> Data? {
