@@ -43,7 +43,7 @@ class PreConfessionViewController: UIViewController {
         // sceneの作成
         sceneView = SceneView(frame: self.view.frame)
         sceneView.imageView.image = UIImage(named: "01_ang")
-        sceneView.backImageView.image = UIImage(named: "maturi")
+//        sceneView.backImageView.image = UIImage(named: "maturi")
         sceneView.delegate = self
         
 
@@ -65,8 +65,9 @@ class PreConfessionViewController: UIViewController {
             //            sceneView.description = description
         }
         //
-        if let background = buttonsData.Data[sceneCounter].backgroundImage {
-            sceneView.backImageView.image = UIImage(named: background)
+
+        if let text = buttonsData.Data[sceneCounter].backgroundImage {
+            sceneView.backImageView.image = UIImage(named: text)
         }
         
         
@@ -79,7 +80,7 @@ class PreConfessionViewController: UIViewController {
     }
     
     func getJSONDataStory() throws -> Data? {
-        guard let path = Bundle.main.path(forResource: "test3", ofType: "json") else { return nil }
+        guard let path = Bundle.main.path(forResource: "story", ofType: "json") else { return nil }
         let url = URL(fileURLWithPath: path)
         return try Data(contentsOf: url)
     }
@@ -116,10 +117,11 @@ extension PreConfessionViewController: SceneViewDelegate {
         }
         
         
-        if let description = buttonsData.Data[sceneCounter].description {
+        if buttonsData.Data[sceneCounter].description != nil {
             //            sceneView.description = description
         }
         //
+        
         if let background = buttonsData.Data[sceneCounter].backgroundImage {
             sceneView.backImageView.image = UIImage(named: background)
         }

@@ -49,12 +49,13 @@ class SceneView: UIView {
     override func layoutSubviews() {
         super.layoutSubviews()
         
-        label.textColor = UIColor.description()
-        label.backgroundColor = .white
-        label.layer.borderColor = UIColor(hex: "E9546A").cgColor
-        label.layer.borderWidth = 5
-        label.layer.cornerRadius = 10
-        label.layer.masksToBounds = true
+        self.bringSubviewToFront(label)
+        label.textColor = UIColor.white()
+//        label.backgroundColor = .white
+//        label.layer.borderColor = UIColor(hex: "E9546A").cgColor
+//        label.layer.borderWidth = 5
+//        label.layer.cornerRadius = 10
+//        label.layer.masksToBounds = true
         
 //        label.frame = CGRect(x: bounds.origin.x + 50,
 //                             y: bounds.origin.y + 50,
