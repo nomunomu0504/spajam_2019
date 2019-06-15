@@ -19,6 +19,8 @@ class PreConfessionViewController: UIViewController {
     
     var sceneCounter = 0
     
+    var repFlag = false
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -65,9 +67,8 @@ class PreConfessionViewController: UIViewController {
             //            sceneView.description = description
         }
         //
-
-        if let text = buttonsData.Data[sceneCounter].backgroundImage {
-            sceneView.backImageView.image = UIImage(named: text)
+        if let background = buttonsData.Data[sceneCounter].backgroundImage {
+            sceneView.backImageView.image = UIImage(named: background)
         }
         
         
@@ -99,42 +100,85 @@ class PreConfessionViewController: UIViewController {
 }
 
 extension PreConfessionViewController: SceneViewDelegate {
+    func sceneLabelTapped(sender: UITapGestureRecognizer) {
+        if repFlag {
+            
+            if let buttons  = buttonsData.Data[sceneCounter].settings?.Button {
+                for (index, button) in buttons.enumerated() {
+                    print("1 button text" + button.text)
+                    sceneView.buttonsTitles[index] = button.text
+                }
+            }
+            
+            
+            if let description = buttonsData.Data[sceneCounter].description {
+                //            sceneView.description = description
+            }
+            //
+            if let background = buttonsData.Data[sceneCounter].backgroundImage {
+                sceneView.backImageView.image = UIImage(named: background)
+            }
+
+            if let unwrapped = buttonsData.Data[sceneCounter].settings?.word {
+                print(unwrapped)
+                sceneView.label.text = unwrapped
+                aiTalk.text2talk(text: unwrapped)
+            }
+            
+            
+            repFlag = false
+            sceneCounter += 1
+        }
+    }
+    
     func sceneViewButtonDidTapped(sender: UIButton) {
         // sceneviewのbuttonがタップされた時に呼ばれる
         print(sender.tag) // buttonのid 上から0
         
-        if let unwrapped = buttonsData.Data[sceneCounter].settings?.word {
-            print(unwrapped)
-            sceneView.label.text = unwrapped
-            aiTalk.text2talk(text: unwrapped)
-        }
-        
-        if let buttons  = buttonsData.Data[sceneCounter].settings?.Button {
-            for (index, button) in buttons.enumerated() {
-                print("button text" + button.text)
-                sceneView.buttonsTitles[index] = button.text
+        if let rep = buttonsData.Data[sceneCounter-1].settings?.Button[sender.tag].reply {
+            print(rep)
+            if rep != "" {
+                sceneView.label.text = rep
+                aiTalk.text2talk(text: rep)
+                repFlag = true
             }
         }
-        
-        
-        if buttonsData.Data[sceneCounter].description != nil {
-            //            sceneView.description = description
+
+        if repFlag == false {
+            if let unwrapped = buttonsData.Data[sceneCounter].settings?.word {
+                print(unwrapped)
+                sceneView.label.text = unwrapped
+                aiTalk.text2talk(text: unwrapped)
+            }
+            
+            if let buttons  = buttonsData.Data[sceneCounter].settings?.Button {
+                for (index, button) in buttons.enumerated() {
+                    print("2 button text" + button.text)
+                    sceneView.buttonsTitles[index] = button.text
+                }
+            }
+            
+            
+            if let description = buttonsData.Data[sceneCounter].description {
+                //            sceneView.description = description
+            }
+            //
+            if let background = buttonsData.Data[sceneCounter].backgroundImage {
+                sceneView.backImageView.image = UIImage(named: background)
+            }
+            
+            sceneCounter += 1
+            
         }
-        //
-        
-        if let background = buttonsData.Data[sceneCounter].backgroundImage {
-            sceneView.backImageView.image = UIImage(named: background)
-        }
-        
-        
-        sceneCounter += 1
-        
         
         if let viewWithTag = self.view.viewWithTag(999) {
+            
             viewWithTag.removeFromSuperview()
         } else{
             print("No!")
+            
         }
+        
     }
     
 }
