@@ -54,10 +54,10 @@ class SceneView: UIView {
         
         buttons = [button1, button2, button3]
         
-        var base_y:CGFloat = 150
+        var button_y: CGFloat = 150
         for (index, button) in buttons.enumerated() {
-            button.frame = CGRect(x: bounds.origin.x + 50, y: (bounds.origin.y + base_y), width: bounds.width - 50 * 2, height: 30)
-            base_y += 60
+            button.frame = CGRect(x: bounds.origin.x + 50, y: (bounds.origin.y + button_y), width: bounds.width - 50 * 2, height: 30)
+            button_y += 60
             button.backgroundColor = UIColor.white
             button.backgroundColor = .white
             button.layer.borderColor = UIColor.border().cgColor
@@ -68,6 +68,14 @@ class SceneView: UIView {
             button.addTarget(self, action: #selector(buttonTapped(_:)), for: .touchUpInside)
         }
 
+//        backImageView.frame = CGRect(x: bounds.origin.x + 10,
+//                                     y: bounds.origin.y + 250,
+//                                     width: bounds.width - 10 * 2,
+//                                     height: 300)
+        imageView.frame =  CGRect(x: bounds.origin.x + 40,
+                                 y: bounds.origin.y + 350,
+                                 width: bounds.width - 30 * 2,
+                                 height: 500)
         
     }
     
