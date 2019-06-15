@@ -64,6 +64,8 @@ struct AITalkWebAPI {
         speed = _speed
         pitch = _pitch
         range = _range
+        output_type = "sound"
+        ext = "mp3"
     }
     
     // 文字列をURLエンコーディングして返す

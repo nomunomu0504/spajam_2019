@@ -20,7 +20,7 @@ class AITalk : NSObject, AVAudioPlayerDelegate {
         _speaker_name: String = "nozomi_emo",
         _style: String = "{\"j\":\"1.0\"}",
         _input_type: String = "text",
-        _text: String,
+        _text: String = "",
         _volume: String = "1.0",
         _speed: String = "1.0",
         _pitch: String = "1.0",

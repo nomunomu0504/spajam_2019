@@ -8,6 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		692D7D1D22B467D9009363BA /* UIcolor+hex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 692D7D1C22B467D9009363BA /* UIcolor+hex.swift */; };
+		694F17FB22B503120029A3DC /* story.json in Resources */ = {isa = PBXBuildFile; fileRef = 694F17FA22B503120029A3DC /* story.json */; };
+		694F17FD22B518390029A3DC /* animal.json in Resources */ = {isa = PBXBuildFile; fileRef = 694F17FC22B518390029A3DC /* animal.json */; };
+		694F17FF22B51AB80029A3DC /* test.json in Resources */ = {isa = PBXBuildFile; fileRef = 694F17FE22B51AB80029A3DC /* test.json */; };
+		694F180122B51AD00029A3DC /* test2.json in Resources */ = {isa = PBXBuildFile; fileRef = 694F180022B51AD00029A3DC /* test2.json */; };
+		694F180322B529AF0029A3DC /* test3.json in Resources */ = {isa = PBXBuildFile; fileRef = 694F180222B529AF0029A3DC /* test3.json */; };
 		6972A5A522B4B7A2003C9660 /* SceneView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6972A5A422B4B7A2003C9660 /* SceneView.swift */; };
 		6972A5A822B4B7D5003C9660 /* SceneView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6972A5A722B4B7D5003C9660 /* SceneView.xib */; };
 		6972A5B022B4BEA1003C9660 /* 01_ang.png in Resources */ = {isa = PBXBuildFile; fileRef = 6972A5AA22B4BEA0003C9660 /* 01_ang.png */; };
@@ -58,6 +63,11 @@
 		5F94C41C6C2A7ED719904D41 /* Pods-spajam2019-mainTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-spajam2019-mainTests.debug.xcconfig"; path = "Target Support Files/Pods-spajam2019-mainTests/Pods-spajam2019-mainTests.debug.xcconfig"; sourceTree = "<group>"; };
 		6884ACFDDEA50D25124D7A27 /* Pods-spajam2019-main.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-spajam2019-main.debug.xcconfig"; path = "Target Support Files/Pods-spajam2019-main/Pods-spajam2019-main.debug.xcconfig"; sourceTree = "<group>"; };
 		692D7D1C22B467D9009363BA /* UIcolor+hex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIcolor+hex.swift"; sourceTree = "<group>"; };
+		694F17FA22B503120029A3DC /* story.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = story.json; sourceTree = "<group>"; };
+		694F17FC22B518390029A3DC /* animal.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = animal.json; sourceTree = "<group>"; };
+		694F17FE22B51AB80029A3DC /* test.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = test.json; sourceTree = "<group>"; };
+		694F180022B51AD00029A3DC /* test2.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = test2.json; sourceTree = "<group>"; };
+		694F180222B529AF0029A3DC /* test3.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = test3.json; sourceTree = "<group>"; };
 		6972A5A422B4B7A2003C9660 /* SceneView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneView.swift; sourceTree = "<group>"; };
 		6972A5A722B4B7D5003C9660 /* SceneView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SceneView.xib; sourceTree = "<group>"; };
 		6972A5AA22B4BEA0003C9660 /* 01_ang.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 01_ang.png; sourceTree = "<group>"; };
@@ -139,6 +149,16 @@
 			path = extensions;
 			sourceTree = "<group>";
 		};
+		694F17F922B503000029A3DC /* stories */ = {
+			isa = PBXGroup;
+			children = (
+				694F17FA22B503120029A3DC /* story.json */,
+				694F180022B51AD00029A3DC /* test2.json */,
+				694F180222B529AF0029A3DC /* test3.json */,
+			);
+			path = stories;
+			sourceTree = "<group>";
+		};
 		6972A5A922B4BE8F003C9660 /* woman1 */ = {
 			isa = PBXGroup;
 			children = (
@@ -186,6 +206,7 @@
 		69F53AAD22B3EE5000956858 /* spajam2019-main */ = {
 			isa = PBXGroup;
 			children = (
+				694F17F922B503000029A3DC /* stories */,
 				99D0483222B4ADBF00DC63BE /* misaki */,
 				99D0483122B4ADBF00DC63BE /* nomunomu */,
 				99D0483322B4ADBF00DC63BE /* resources */,
@@ -197,6 +218,8 @@
 				69F53ABA22B3EE5200956858 /* LaunchScreen.storyboard */,
 				69F53ABD22B3EE5200956858 /* Info.plist */,
 				69F53AB522B3EE5000956858 /* spajam2019_main.xcdatamodeld */,
+				694F17FC22B518390029A3DC /* animal.json */,
+				694F17FE22B51AB80029A3DC /* test.json */,
 			);
 			path = "spajam2019-main";
 			sourceTree = "<group>";
@@ -371,16 +394,21 @@
 			files = (
 				6972A5BA22B4C5ED003C9660 /* hanabi.jpg in Resources */,
 				6972A5B822B4C56D003C9660 /* maturi.jpg in Resources */,
+				694F180322B529AF0029A3DC /* test3.json in Resources */,
+				694F17FF22B51AB80029A3DC /* test.json in Resources */,
 				6972A5A822B4B7D5003C9660 /* SceneView.xib in Resources */,
+				694F180122B51AD00029A3DC /* test2.json in Resources */,
 				6972A5B322B4BEA1003C9660 /* 01_koma2.png in Resources */,
 				69F53ABC22B3EE5200956858 /* LaunchScreen.storyboard in Resources */,
 				6972A5B122B4BEA1003C9660 /* 01_koma.png in Resources */,
 				6972A5B222B4BEA1003C9660 /* 01_la.png in Resources */,
+				694F17FD22B518390029A3DC /* animal.json in Resources */,
 				69F53AB922B3EE5200956858 /* Assets.xcassets in Resources */,
 				6972A5B422B4BEA1003C9660 /* 01_ang2.png in Resources */,
 				6972A5B022B4BEA1003C9660 /* 01_ang.png in Resources */,
 				6972A5B522B4BEA1003C9660 /* 01_nor.png in Resources */,
 				69F53AB422B3EE5000956858 /* Main.storyboard in Resources */,
+				694F17FB22B503120029A3DC /* story.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
