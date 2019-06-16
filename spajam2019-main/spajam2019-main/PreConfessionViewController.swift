@@ -28,6 +28,8 @@ class PreConfessionViewController: UIViewController {
     
     var globalResult = ""
     
+    var tappedButton = 0
+    
     private let speechRecognizer = SFSpeechRecognizer(locale: Locale(identifier: "ja-JP"))!
     private var recognitionRequest: SFSpeechAudioBufferRecognitionRequest?
     private var recognitionTask: SFSpeechRecognitionTask?
@@ -256,6 +258,9 @@ extension PreConfessionViewController: SceneViewDelegate {
             
             repFlag = false
             sceneCounter += 1
+            //print("tappedButton:\(tappedButton)")
+            //sceneCounter += (buttonsData.Data[sceneCounter].settings?.Button[tappedButton].nextScene)!
+            
             if sceneCounter-1 >= buttonsData.Data.count-1 {
                 let endView = EndView(frame: self.view.frame)
                 view.addSubview(endView)
@@ -322,7 +327,10 @@ extension PreConfessionViewController: SceneViewDelegate {
                 sceneView.backImageView.image = UIImage(named: background)
             }
             
-            sceneCounter += 1
+            tappedButton = sender_tag
+            //sceneCounter += 1
+            print("tappedButton:\(tappedButton)")
+            sceneCounter += (buttonsData.Data[sceneCounter].settings?.Button[tappedButton].nextScene)!
             if sceneCounter-1 >= buttonsData.Data.count-1 {
                 let endView = EndView(frame: self.view.frame)
                 view.addSubview(endView)

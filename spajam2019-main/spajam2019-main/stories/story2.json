@@ -66,16 +66,16 @@
               "word": "｢そうだね｣",
               "Button": [
                 {
-                  "text": "はぐれないようにね",
+                  "text": "(周りの人とぶつからないように少し前気味で、後ろも確認しよう)",
                   "rate": 1,
                   "reply": "｢うん｣",
                   "face": "01_nor",
                   "nextScene": 1
                 },
                 {
-                  "text": "(周りの人とぶつからないように少し前気味で、後ろも確認しよう)",
+                  "text": "はぐれないようにね",
                   "rate": 1,
-                  "reply": "",
+                  "reply": "わかった",
                   "face": "01_nor",
                   "nextScene": 1
                 },
@@ -96,21 +96,21 @@
               "word": "｢色々あるね｣",
               "Button": [
                 {
-                  "text": "焼きそばでも食べよう",
+                  "text": "かき氷でも食べよう",
                   "rate": 1,
                   "reply": "｢いいね｣",
                   "face": "01_nor",
                   "nextScene": 1
                 },
                 {
-                  "text": "かき氷でも食べよう",
+                  "text": "焼きそばでも食べよう",
                   "rate": 1,
                   "reply": "｢いいね｣",
                   "face": "01_nor",
                   "nextScene": 2
                 },
                 {
-                  "text": "",
+                  "text": "射的しよう",
                   "rate": 1,
                   "reply": "｢｣",
                   "face": "",
@@ -126,25 +126,25 @@
               "word": "｢うん?｣",
               "Button": [
                 {
-                  "text": "唇が油でテカテカになってる",
+                  "text": "",
                   "rate": 1,
-                  "reply": "｢これはそういうの塗ったの｣",
-                  "face": "01_ang2",
-                  "nextScene": 1
+                  "reply": "｢｣",
+                  "face": "",
+                  "nextScene": 2
+                },
+                {
+                  "text": "舌が真緑になってる",
+                  "rate": 1,
+                  "reply": "｢えー嘘ー｣",
+                  "face": "01_koma",
+                  "nextScene": 2
                 },
                 {
                   "text": "",
                   "rate": 1,
                   "reply": "",
                   "face": "",
-                  "nextScene": 1
-                },
-                {
-                  "text": "歯に青のりついてる",
-                  "rate": 1,
-                  "reply": "｢ほんと?えー食べなきゃよかった｣",
-                  "face": "01_koma",
-                  "nextScene": 1
+                  "nextScene": 2
                 }
               ],
               "description": "｢あっ｣",
@@ -152,34 +152,34 @@
             }
           },
           {
-            "settings": {
-              "word": "｢うん?｣",
-              "Button": [
-                {
-                  "text": "",
-                  "rate": 1,
-                  "reply": "｢｣",
-                  "face": "",
-                  "nextScene": 1
-                },
-                {
-                  "text": "舌が真緑になってる",
-                  "rate": 1,
-                  "reply": "｢えー嘘ー｣",
-                  "face": "01_koma",
-                  "nextScene": 1
-                },
-                {
-                  "text": "",
-                  "rate": 1,
-                  "reply": "",
-                  "face": "",
-                  "nextScene": 1
-                }
-              ],
-              "description": "｢あっ｣",
-              "backgroundImage": "maturi"
-            }
+              "settings": {
+                  "word": "｢うん?｣",
+                  "Button": [
+                      {
+                          "text": "唇が油でテカテカになってる",
+                          "rate": 1,
+                          "reply": "｢これはそういうの塗ったの｣",
+                          "face": "01_ang2",
+                          "nextScene": 3
+                      },
+                      {
+                          "text": "歯に青のりついてる",
+                          "rate": 1,
+                          "reply": "｢ほんと?えー食べなきゃよかった｣",
+                          "face": "",
+                          "nextScene": 3
+                      },
+                      {
+                          "text": "お腹大丈夫？",
+                          "rate": 1,
+                          "reply": "",
+                          "face": "01_koma",
+                          "nextScene": 3
+                      }
+                  ],
+                  "description": "｢あっ｣",
+                  "backgroundImage": "maturi"
+              }
           },
           {
             "settings": {

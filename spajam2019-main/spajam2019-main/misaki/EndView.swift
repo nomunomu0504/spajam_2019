@@ -19,7 +19,7 @@ class EndView: UIView {
                               width: self.bounds.width - 50 * 2 , height: self.bounds.height / 2)
         sender.titleLabel?.font =  UIFont.systemFont(ofSize: 30)
         sender.titleLabel?.numberOfLines = 2
-        sender.setTitle("おめどう！成功しました", for: .normal)
+        sender.setTitle("おめでとう！成功しました", for: .normal)
     }
     override init(frame: CGRect) {
         super.init(frame: frame)
