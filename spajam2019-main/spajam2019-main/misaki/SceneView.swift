@@ -31,6 +31,7 @@ class SceneView: UIView {
     
     
     @IBOutlet weak var backImageView: UIImageView!
+    @IBOutlet weak var speachButton: UIButton!
     
     
     var buttons: Array<UIButton>!

@@ -200,6 +200,7 @@ extension PreConfessionViewController: SceneViewDelegate {
     
     func start(sender: UIButton) {
         if audioEngine.isRunning {
+            sceneView.speachButton.backgroundColor = .white
             audioEngine.stop()
             recognitionRequest?.endAudio()
 //            button.isEnabled = false
@@ -217,6 +218,7 @@ extension PreConfessionViewController: SceneViewDelegate {
 
         } else {
             try! startRecording()
+            sceneView.speachButton.backgroundColor = .orange
 //            button.setTitle("音声認識を中止", for: [])
         }
     }
