@@ -87,6 +87,11 @@ class PreConfessionViewController: UIViewController {
                 self.recognitionRequest = nil
                 self.recognitionTask = nil
                 
+                Thread.sleep(forTimeInterval: 2)
+                try! audioSession.setCategory(AVAudioSession.Category.ambient)
+                try! audioSession.setMode(AVAudioSession.Mode.default)
+                try! audioSession.setActive(true)
+                
             }
         }
         
