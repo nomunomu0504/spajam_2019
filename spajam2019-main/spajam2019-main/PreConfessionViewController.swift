@@ -157,6 +157,7 @@ class PreConfessionViewController: UIViewController {
         if let buttons  = buttonsData.Data[sceneCounter].settings?.Button {
             for (index, button) in buttons.enumerated() {
                 print("button text" + button.text)
+                tappedButton = index
                 sceneView.buttonsTitles[index] = button.text
             }
         }
@@ -211,6 +212,7 @@ extension PreConfessionViewController: SceneViewDelegate {
                 for (index, button) in buttons.enumerated() {
 //                    print("2 button text" + button.text)
                     if globalResult == button.text {
+                        tappedButton = index
                         buttonClick(sender_tag: index)
                     }
 //                    sceneView.buttonsTitles[index] = button.text
@@ -236,6 +238,7 @@ extension PreConfessionViewController: SceneViewDelegate {
             if let buttons  = buttonsData.Data[sceneCounter].settings?.Button {
                 for (index, button) in buttons.enumerated() {
                     print("1 button text" + button.text)
+                    tappedButton = index
                     sceneView.buttonsTitles[index] = button.text
                 }
             }
@@ -305,6 +308,7 @@ extension PreConfessionViewController: SceneViewDelegate {
             if let buttons  = buttonsData.Data[sceneCounter].settings?.Button {
                 for (index, button) in buttons.enumerated() {
                     print("2 button text" + button.text)
+                    tappedButton = index
                     sceneView.buttonsTitles[index] = button.text
                 }
             }
